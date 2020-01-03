@@ -83,5 +83,22 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecsinapse/login.git"
+  },
+  "keywords": [
+    "tecsinapse",
+    "ui-kit",
+    "react",
+    "material-ui",
+    "login"
+  ],
+  "author": "TecSinapse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tecsinapse/login/issues"
+  },
+  "homepage": "https://github.com/tecsinapse/login#readme"
 }
