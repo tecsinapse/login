@@ -1,0 +1,77 @@
+import { Meta, Story, Props, Source } from '@storybook/addon-docs/blocks';
+import { DivFlex } from '@tecsinapse/ui-kit/build/withFlexCenter';
+import { Login } from './Login';
+import { InputPassword } from './storyHelper';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import { Input } from '@tecsinapse/ui-kit';
+import { headerImages1, headerImages2 } from './headerImages';
+import Typography from '@material-ui/core/Typography';
+
+<Meta
+  title="Login"
+  decorators={[
+    story => (
+      <DivFlex>
+        <div style={{ width: 400 }}>{story()}</div>
+      </DivFlex>
+    ),
+  ]}
+/>
+
+# Login
+
+The Login component can receive the following props.
+
+<Props of={Login} />
+
+# Code snippets
+
+Here you can check the code snippet for the story.
+
+## Login
+
+<Story name="Sign in" parameters={{ docs: { disable: true } }}>
+  <Login
+    headerImages={headerImages1}
+    rememberBox
+    forgotPassword={{
+      label: 'Esqueceu a senha?',
+      component: 'a',
+      props: { href: 'http://www.google.com.br' },
+    }}
+    onClick={remember => /* console.log("Login:", remember) */ null}
+    buttonLabel="Acessar ao Sistema"
+  >
+    <Input
+      name="login_email"
+      label="E-mail"
+      style={{ width: '100%' }}
+      startAdornment={<AccountCircle />}
+    />
+    <InputPassword />
+  </Login>
+</Story>
+
+<Source id="login--sign-in" />
+
+## Password Recovery
+
+<Story name="Password recovery" parameters={{ docs: { disable: true } }}>
+  <Login
+    rememberBox={false}
+    headerImages={headerImages2}
+    headerText={<Typography variant="h5">Recuperação de Senha</Typography>}
+    subheaderText="Informe abaixo o seu e-mail cadastrado no sistema."
+    buttonLabel="Enviar nova senha"
+    onClick={() => /* console.log("Recupera!!!!") */ null}
+  >
+    <Input
+      name="recupera"
+      label="E-mail cadastrado"
+      style={{ width: '100%' }}
+      startAdornment={<AccountCircle />}
+    />
+  </Login>
+</Story>
+
+<Source id="login--password-recovery" />
