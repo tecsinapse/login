@@ -1,3 +1,9 @@
+## <small>1.0.1 (2020-01-03)</small>
+
+* Setup MDX docs ([3243466](https://github.com/tecsinapse/login/commit/3243466))
+
+
+
 ## 1.0.0 (2020-01-03)
 
 *  - Added style do selected item background color by props ([f2f9489](https://github.com/tecsinapse/login/commit/f2f9489))
