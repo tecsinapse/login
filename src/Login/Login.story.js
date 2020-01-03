@@ -8,9 +8,9 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import { Input } from '@tecsinapse/ui-kit';
+import { DivFlex } from '@tecsinapse/ui-kit/build/withFlexCenter';
 import { Login } from './Login';
-import { Input } from '../Inputs/Input';
-import { DivFlex } from '../withFlexCenter';
 import { headerImages1, headerImages2 } from './headerImages';
 
 const InputPassword = () => {
