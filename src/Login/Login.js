@@ -316,6 +316,7 @@ Login.defaultProps = {
   footerImg: null,
   variant: 'auto',
   backgroundImage: '',
+  googleProvider: null,
 };
 
 Login.propTypes = {
@@ -335,6 +336,10 @@ Login.propTypes = {
   footerImg: PropTypes.object,
   variant: PropTypes.oneOf(['auto', 'mobile', 'web']),
   backgroundImage: PropTypes.string,
+  googleProvider: PropTypes.shape({
+    loginUrl: PropTypes.string,
+    label: PropTypes.string,
+  }),
 };
 
 export default Login;
