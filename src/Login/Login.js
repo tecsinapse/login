@@ -8,9 +8,10 @@ import { Typography } from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
 import clsx from 'clsx';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Button } from '../Buttons/Button';
+import { Button } from '@tecsinapse/ui-kit';
+import { defaultGreyLight3 } from '@tecsinapse/ui-kit/build/colors';
+import { renderStyledColor } from '@tecsinapse/ui-kit/build/ThemeProvider';
 import PoweredBy from './PoweredBy';
-import { defaultGreyLight3 } from '../colors';
 
 const useStyle = (rememberBox, backgroundImage) =>
   makeStyles(({ spacing }) => ({
@@ -148,7 +149,7 @@ export const Login = ({
   const [remember, setRemember] = useState(false);
 
   const classes = useStyle(rememberBox, backgroundImage)();
-
+  const theme = useTheme();
   const matches = useMediaQuery(useTheme().breakpoints.down('xs'));
 
   let mobile = false;
@@ -244,7 +245,8 @@ export const Login = ({
           size="large"
           className={classes.submit}
           fullWidth={mobile}
-          variant="primary"
+          variant="contained"
+          color={renderStyledColor(theme.variant)}
           onClick={() => (rememberBox ? onClick(remember) : onClick())}
         >
           {buttonLabel}
@@ -255,7 +257,8 @@ export const Login = ({
             href={googleProvider.loginUrl}
             className={mobile ? classes.socialMobile : classes.social}
             fullWidth={mobile}
-            variant="primary"
+            variant="contained"
+            color={renderStyledColor(theme.variant)}
           >
             {googleProvider.label}
           </Button>
@@ -317,7 +320,7 @@ Login.defaultProps = {
 
 Login.propTypes = {
   headerImages: PropTypes.arrayOf(PropTypes.string),
-  headerText: PropTypes.string,
+  headerText: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   subheaderText: PropTypes.string,
   subheaderTextInnerHtml: PropTypes.string,
   rememberBox: PropTypes.bool,
