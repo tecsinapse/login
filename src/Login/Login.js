@@ -320,22 +320,35 @@ Login.defaultProps = {
 };
 
 Login.propTypes = {
+  /** Images placed on header */
   headerImages: PropTypes.arrayOf(PropTypes.string),
+  /** Text placed on header */
   headerText: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  /** Subheader text */
   subheaderText: PropTypes.string,
+  /** Inner html for subheader */
   subheaderTextInnerHtml: PropTypes.string,
+  /** Remember me option */
   rememberBox: PropTypes.bool,
+  /** Forgot password redirect. If component is `a`, you can pass `{ href: 'URL'}` as `props` */
   forgotPassword: PropTypes.shape({
     component: PropTypes.node,
     props: PropTypes.object,
     label: PropTypes.string,
   }),
+  /** Login button label */
   buttonLabel: PropTypes.string,
+  /** Remember me option label */
   rememberLabel: PropTypes.string,
+  /** Login button click event handler */
   onClick: PropTypes.func,
+  /** Image placed on footer */
   footerImg: PropTypes.object,
+  /** Component variant view */
   variant: PropTypes.oneOf(['auto', 'mobile', 'web']),
+  /** Page background image */
   backgroundImage: PropTypes.string,
+  /** Google login option */
   googleProvider: PropTypes.shape({
     loginUrl: PropTypes.string,
     label: PropTypes.string,
