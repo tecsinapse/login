@@ -1,3 +1,12 @@
+## <small>1.0.2 (2020-01-20)</small>
+
+* Improving props table ([8f4d97e](https://github.com/tecsinapse/login/commit/8f4d97e))
+* Setup Jest ([c7dfda6](https://github.com/tecsinapse/login/commit/c7dfda6))
+* Updating deps ([45b7247](https://github.com/tecsinapse/login/commit/45b7247))
+* Updating deps ([ed22ecd](https://github.com/tecsinapse/login/commit/ed22ecd))
+
+
+
 ## <small>1.0.1 (2020-01-03)</small>
 
 * Setup MDX docs ([3243466](https://github.com/tecsinapse/login/commit/3243466))
