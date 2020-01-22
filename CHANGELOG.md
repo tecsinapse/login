@@ -1,3 +1,9 @@
+## 1.1.0 (2020-01-22)
+
+* @tecsinapse/ui-kit@4.0.0 ([199ad03](https://github.com/tecsinapse/login/commit/199ad03))
+
+
+
 ## <small>1.0.2 (2020-01-20)</small>
 
 * Improving props table ([8f4d97e](https://github.com/tecsinapse/login/commit/8f4d97e))
