@@ -81,7 +81,7 @@ const useStyle = (rememberBox, backgroundImage) =>
       marginRight: spacing(0.5),
     },
     footerImg: {
-      width: '20%',
+      maxWidth: '20%',
     },
     inputData: {
       alignSelf: 'stretch',
@@ -168,7 +168,7 @@ export const Login = ({
       })}
     >
       {headerImages.map(src => (
-        <div className={classes.logoContainer}>
+        <div key={src} className={classes.logoContainer}>
           <img src={src} alt="logo" key={src} className={classes.logo} />
         </div>
       ))}
@@ -248,6 +248,7 @@ export const Login = ({
           variant="contained"
           color={renderStyledColor(theme.variant)}
           onClick={() => (rememberBox ? onClick(remember) : onClick())}
+          disableElevation
         >
           {buttonLabel}
         </Button>
@@ -259,6 +260,7 @@ export const Login = ({
             fullWidth={mobile}
             variant="contained"
             color={renderStyledColor(theme.variant)}
+            disableElevation
           >
             {googleProvider.label}
           </Button>

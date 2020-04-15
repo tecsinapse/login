@@ -9,11 +9,12 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 export const InputPassword = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const style = { width: '100%', backgroundColor: '#fff' };
   return (
     <Input
       name="login_senha"
       label="Senha"
-      style={{ width: '100%', backgroundColor: '#fff' }}
+      style={style}
       type={showPassword ? 'text' : 'password'}
       InputProps={{
         startAdornment: (
