@@ -8,7 +8,7 @@ import { Input, ThemeProvider } from '@tecsinapse/ui-kit';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Typography from '@material-ui/core/Typography';
 import { Login } from '../src';
-import { headerImages2 } from '../src/Login/headerImages';
+import { headerImages2 } from '../src/components/Login/headerImages';
 
 const theme = createMuiTheme({
   palette: {
@@ -29,6 +29,7 @@ const theme = createMuiTheme({
 });
 
 test('Render Login', () => {
+  const style = { width: '100%' };
   const { container, getByText } = render(
     <ThemeProvider variant="orange">
       <MuiThemeProvider theme={theme}>
@@ -45,7 +46,7 @@ test('Render Login', () => {
           <Input
             name="recupera"
             label="E-mail cadastrado"
-            style={{ width: '100%' }}
+            style={style}
             startAdornment={<AccountCircle />}
           />
         </Login>
