@@ -1,3 +1,11 @@
+## <small>1.1.1 (2020-04-15)</small>
+
+*  - Organizing file structure ([cb0ecea](https://github.com/tecsinapse/login/commit/cb0ecea))
+*  - Uniq Key ([e05e6e3](https://github.com/tecsinapse/login/commit/e05e6e3))
+* Missing Memo on react-is at build ([b5f6212](https://github.com/tecsinapse/login/commit/b5f6212))
+
+
+
 ## 1.1.0 (2020-01-22)
 
 * @tecsinapse/ui-kit@4.0.0 ([199ad03](https://github.com/tecsinapse/login/commit/199ad03))

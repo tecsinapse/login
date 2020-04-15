@@ -2,7 +2,7 @@
   "name": "@tecsinapse/login",
   "description": "TecSinapse Login",
   "homepage": "https://github.com/tecsinapse/login#readme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/index.cjs.js",
   "module": "build/index.js",
   "author": {
@@ -87,13 +87,13 @@
     "build-all": "yarn build && yarn storybook:build",
     "build-publish": "yarn build-all && npm publish",
     "dev": "rollup -c -w",
+    "hooks": "bash .git/hooks/pre-commit",
+    "publish:beta": "npm publish --tag beta",
     "start": "yarn install && yarn storybook",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o docs/",
     "test": "NODE_ENV=test jest",
-    "test:windows": "set NODE_ENV=test&& jest",
-    "hooks": "bash .git/hooks/pre-commit",
-    "publish:beta": "npm publish --tag beta"
+    "test:windows": "set NODE_ENV=test&& jest"
   },
   "license": "MIT",
   "husky": {
