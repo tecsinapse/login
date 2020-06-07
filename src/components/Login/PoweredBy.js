@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default () => {
-  const style = { maxHeight: '100%' };
-  return (
-    <img
-      style={style}
-      src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAK0AAAA8CAYAAAAUlTqlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+const style = { maxHeight: '100%' };
+
+export default () => (
+  <img
+    style={style}
+    src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAK0AAAA8CAYAAAAUlTqlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1
@@ -94,7 +94,6 @@ UQrYEpWA7ebpkQyzLoSrmXFoOXIV62amaZO8A1NZt5vNVvi1AL79yJ2VWIWY9rdsfClhWIwBWHtc
 Q48iBrdNbyWqJAEgYtajATLSWWl/QEdMZU8xxJGPjt5UXW2b3kpk0DonAOvGmMt228003Da7lVwN
 sXyJadMJ7ah6yDa7laEKWlptopUVciaTUUfO+Mkmo82KlTDyPwEGAGcLhPXYFI49AAAAAElFTkSu
 QmCC"
-      alt="Powered By Tecsinapse"
-    />
-  );
-};
+    alt="Powered By Tecsinapse"
+  />
+);

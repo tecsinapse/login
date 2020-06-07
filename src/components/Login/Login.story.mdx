@@ -5,7 +5,7 @@ import { InputPassword } from './storyHelper';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { Input } from '@tecsinapse/ui-kit';
 import { headerImages1, headerImages2 } from './headerImages';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Grid } from '@material-ui/core';
 
 <Meta
   title="Login"
@@ -42,13 +42,20 @@ Here you can check the code snippet for the story.
     onClick={remember => /* console.log("Login:", remember) */ null}
     buttonLabel="Acessar ao Sistema"
   >
-    <Input
-      name="login_email"
-      label="E-mail"
-      style={{ width: '100%' }}
-      startAdornment={<AccountCircle />}
-    />
-    <InputPassword />
+      <Grid container spacing={2}>
+          <Grid item xs={12} xl={12} md={12}>
+            <Input
+              name="login_email"
+              label="E-mail"
+              style={{ width: '100%' }}
+              startAdornment={<AccountCircle />}
+              margin="none"
+            />
+          </Grid>
+          <Grid item xs={12} xl={12} md={12}>
+            <InputPassword />
+          </Grid>
+      </Grid>
   </Login>
 </Story>
 
