@@ -1,3 +1,9 @@
+## <small>1.1.2 (2020-06-07)</small>
+
+* Missing Memo on react-is at build ([abc1b05](https://github.com/tecsinapse/login/commit/abc1b05))
+
+
+
 ## <small>1.1.1 (2020-04-15)</small>
 
 *  - Organizing file structure ([cb0ecea](https://github.com/tecsinapse/login/commit/cb0ecea))
