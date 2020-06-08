@@ -13,123 +13,123 @@ import { defaultGreyLight3 } from '@tecsinapse/ui-kit/build/colors';
 import { renderStyledColor } from '@tecsinapse/ui-kit/build/ThemeProvider';
 import PoweredBy from './PoweredBy';
 
-const useStyle = (rememberBox, backgroundImage) =>
-  makeStyles(({ spacing }) => ({
-    root: {
-      width: '100%',
-      height: '100%',
-      position: 'relative',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'stretch',
-    },
-    rootmobile: {
-      backgroundImage: `url(${backgroundImage})`,
-      display: 'flex',
-      width: '100vw',
-      height: '100vh',
-      position: 'absolute',
-      left: '0',
-      top: '0',
-    },
-    imgHeader: {
-      display: 'flex',
-      justifyContent: 'space-evenly',
-      flexBasis: '150px',
-      alignItems: 'center',
-    },
-    content: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      marginLeft: '5%',
-      marginRight: '5%',
-      paddingRight: spacing(1),
-    },
-    contentMobile: {
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      paddingRight: spacing(1),
-    },
-    footerImage: {
-      maxHeight: '60%',
-      textAlign: 'center',
-    },
-    footer: {
-      borderTop: `solid 1px rgba(0, 0, 0, 0.12)`,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '60px',
-      backgroundColor: defaultGreyLight3,
-    },
-    footermobile: {
-      backgroundColor: '#fff',
-    },
-    strechSelf: {
-      alignSelf: 'stretch',
-    },
-    logo: {
-      height: 'auto',
-      maxWidth: '100%',
-    },
-    logoContainer: {
-      display: 'block',
-      textAlign: 'center',
-      marginLeft: spacing(0.5),
-      marginRight: spacing(0.5),
-    },
-    footerImg: {
-      maxWidth: '20%',
-    },
-    inputData: {
-      alignSelf: 'stretch',
-      marginTop: spacing(1),
-    },
-    extra: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: rememberBox ? 'space-between' : 'flex-end',
-      marginTop: spacing(1),
-    },
-    extramobile: {
-      flexDirection: 'column',
-    },
-    submit: {
-      marginTop: spacing(2),
-      marginBottom: spacing(2),
-    },
-    social: {
-      marginTop: spacing(2),
-      marginBottom: spacing(2),
-      marginLeft: spacing(1),
-    },
-    socialMobile: {
-      marginTop: spacing(1),
-    },
-    forgot: {
-      alignSelf: 'center',
-    },
-    forgotmobile: {
-      marginTop: spacing(1),
-    },
-    header: {
-      marginTop: spacing(2),
-    },
-    formControlLabelCheck: {
-      height: spacing(1),
-    },
-    formControlLabelCheckMobile: {
-      height: spacing(1),
-      alignSelf: 'flex-start',
-    },
-    checkbox: {
-      width: spacing(2),
-      height: spacing(2),
-    },
-  }));
+const useStyle = makeStyles(({ spacing }) => ({
+  root: {
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'stretch',
+  },
+  rootmobile: {
+    backgroundImage: ({ backgroundImage }) => `url(${backgroundImage})`,
+    display: 'flex',
+    width: '100vw',
+    height: '100vh',
+    position: 'absolute',
+    left: '0',
+    top: '0',
+  },
+  imgHeader: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    flexBasis: '250px',
+    alignItems: 'center',
+  },
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginLeft: '5%',
+    marginRight: '5%',
+    paddingRight: spacing(1),
+  },
+  contentMobile: {
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingRight: spacing(1),
+  },
+  footerImage: {
+    maxHeight: '60%',
+    textAlign: 'center',
+  },
+  footer: {
+    borderTop: `solid 1px rgba(0, 0, 0, 0.12)`,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '60px',
+    backgroundColor: defaultGreyLight3,
+  },
+  footermobile: {
+    backgroundColor: '#fff',
+  },
+  strechSelf: {
+    alignSelf: 'stretch',
+  },
+  logo: {
+    height: 'auto',
+    maxWidth: '100%',
+  },
+  logoContainer: {
+    display: 'block',
+    textAlign: 'center',
+    marginLeft: spacing(0.5),
+    marginRight: spacing(0.5),
+  },
+  footerImg: {
+    maxWidth: '20%',
+  },
+  inputData: {
+    alignSelf: 'stretch',
+    marginTop: spacing(1),
+  },
+  extra: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: ({ rememberBox }) =>
+      rememberBox ? 'space-between' : 'flex-end',
+    marginTop: spacing(1),
+  },
+  extramobile: {
+    flexDirection: 'column',
+  },
+  submit: {
+    marginTop: spacing(2),
+    marginBottom: spacing(2),
+  },
+  social: {
+    marginTop: spacing(2),
+    marginBottom: spacing(2),
+    marginLeft: spacing(1),
+  },
+  socialMobile: {
+    marginTop: spacing(1),
+  },
+  forgot: {
+    alignSelf: 'center',
+  },
+  forgotmobile: {
+    marginTop: spacing(1),
+  },
+  header: {
+    marginTop: spacing(2),
+  },
+  formControlLabelCheck: {
+    height: spacing(1),
+  },
+  formControlLabelCheckMobile: {
+    height: spacing(1),
+    alignSelf: 'flex-start',
+  },
+  checkbox: {
+    width: spacing(2),
+    height: spacing(2),
+  },
+}));
 
 export const Login = ({
   headerImages,
@@ -149,7 +149,7 @@ export const Login = ({
 }) => {
   const [remember, setRemember] = useState(false);
 
-  const classes = useStyle(rememberBox, backgroundImage)();
+  const classes = useStyle({ rememberBox, backgroundImage });
   const theme = useTheme();
   const matches = useMediaQuery(useTheme().breakpoints.down('xs'));
 
