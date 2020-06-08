@@ -2,9 +2,10 @@ language: node_js
 node_js:
   - 12
 script:
+  - yarn install
+  - yarn test
   - yarn storybook:build
   - yarn build
-  - yarn test
 
 cache:
   yarn: true
