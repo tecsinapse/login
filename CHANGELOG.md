@@ -1,3 +1,11 @@
+## <small>1.1.3 (2020-06-08)</small>
+
+* Fix building ([659626d](https://github.com/tecsinapse/login/commit/659626d))
+* Testando notificações ([fee066a](https://github.com/tecsinapse/login/commit/fee066a))
+* Update .travis.yml ([f4bbd98](https://github.com/tecsinapse/login/commit/f4bbd98))
+
+
+
 ## <small>1.1.2 (2020-06-07)</small>
 
 * Missing Memo on react-is at build ([abc1b05](https://github.com/tecsinapse/login/commit/abc1b05))
