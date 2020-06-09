@@ -1,10 +1,8 @@
 import React from 'react';
 
-const style = { maxHeight: '100%' };
-
-export default () => (
+export default ({ classes }) => (
   <img
-    style={style}
+    className={classes.footerPoweredBy}
     src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAK0AAAA8CAYAAAAUlTqlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6

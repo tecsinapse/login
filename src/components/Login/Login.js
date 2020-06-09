@@ -51,7 +51,9 @@ const useStyle = makeStyles(({ spacing }) => ({
     paddingRight: spacing(1),
   },
   footerImage: {
-    maxHeight: '60%',
+    display: 'inline-block',
+    maxHeight: '100%',
+    maxWidth: '100%',
     textAlign: 'center',
   },
   footer: {
@@ -60,7 +62,6 @@ const useStyle = makeStyles(({ spacing }) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '60px',
     backgroundColor: defaultGreyLight3,
   },
   footermobile: {
@@ -80,7 +81,7 @@ const useStyle = makeStyles(({ spacing }) => ({
     marginRight: spacing(0.5),
   },
   footerImg: {
-    maxWidth: '20%',
+    width: '20%',
   },
   inputData: {
     alignSelf: 'stretch',
@@ -127,6 +128,11 @@ const useStyle = makeStyles(({ spacing }) => ({
   checkbox: {
     width: spacing(2),
     height: spacing(2),
+  },
+  footerPoweredBy: {
+    maxHeight: '60%',
+    maxWidth: '60%',
+    margin: spacing(1),
   },
 }));
 
@@ -268,11 +274,7 @@ export const Login = ({
       })}
     >
       <div className={classes.footerImage}>
-        {footerImg ? (
-          { footerImg }
-        ) : (
-          <PoweredBy className={classes.footerImg} />
-        )}
+        {footerImg ? { footerImg } : <PoweredBy classes={classes} />}
       </div>
     </div>
   );
