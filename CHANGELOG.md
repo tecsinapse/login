@@ -1,3 +1,14 @@
+## <small>1.1.6 (2020-06-09)</small>
+
+
+
+
+## <small>1.1.5 (2020-06-09)</small>
+
+* Fix building ([9b1b7be](https://github.com/tecsinapse/login/commit/9b1b7be))
+
+
+
 ## <small>1.1.4 (2020-06-09)</small>
 
 * Fix building ([52368c4](https://github.com/tecsinapse/login/commit/52368c4))
