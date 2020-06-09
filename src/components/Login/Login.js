@@ -44,7 +44,6 @@ const useStyle = makeStyles(({ spacing }) => ({
     alignItems: 'center',
     marginLeft: '5%',
     marginRight: '5%',
-    paddingRight: spacing(1),
   },
   contentMobile: {
     alignItems: 'center',
@@ -204,16 +203,10 @@ export const Login = ({
       <div className={classes.inputData}>
         {children}
 
-        <div
-          className={clsx(classes.extra, {
-            [classes.extramobile]: mobile,
-          })}
-        >
+        <div className={classes.extra}>
           {rememberBox && (
             <FormControlLabel
-              className={clsx(classes.formControlLabelCheck, {
-                [classes.formControlLabelCheckMobile]: mobile,
-              })}
+              className={classes.formControlLabelCheck}
               control={
                 <Checkbox
                   className={classes.checkbox}
@@ -230,9 +223,7 @@ export const Login = ({
           )}
           {forgotPassword && forgotPassword.component && (
             <Typography
-              className={clsx(classes.forgot, {
-                [classes.forgotmobile]: mobile,
-              })}
+              className={classes.forgot}
               variant="subtitle2"
               color={mobile ? 'textPrimary' : 'secondary'}
               component={forgotPassword.component}
