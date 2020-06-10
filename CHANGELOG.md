@@ -1,3 +1,9 @@
+## <small>1.1.7 (2020-06-09)</small>
+
+* Fix building ([dca0f12](https://github.com/tecsinapse/login/commit/dca0f12))
+
+
+
 ## <small>1.1.6 (2020-06-09)</small>
 
 
