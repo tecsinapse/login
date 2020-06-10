@@ -24,7 +24,8 @@ const useStyle = makeStyles(({ spacing }) => ({
     alignItems: 'stretch',
   },
   rootmobile: {
-    backgroundImage: ({ backgroundImage }) => `url(${backgroundImage})`,
+    backgroundImage: ({ backgroundImage }) =>
+      backgroundImage && `url(${backgroundImage})`,
     display: 'flex',
     width: '100vw',
     height: '100vh',
@@ -48,7 +49,6 @@ const useStyle = makeStyles(({ spacing }) => ({
   contentMobile: {
     alignItems: 'center',
     justifyContent: 'flex-end',
-    paddingRight: spacing(1),
   },
   footerImage: {
     display: 'inline-block',
