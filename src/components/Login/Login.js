@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import Paper from '@material-ui/core/Paper';
+import {
+  Paper,
+  useMediaQuery,
+  Divider,
+  Typography,
+  Checkbox,
+  FormControlLabel,
+} from '@material-ui/core';
 import PropTypes from 'prop-types';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { makeStyles, useTheme } from '@material-ui/styles';
-import Divider from '@material-ui/core/Divider';
-import { Typography } from '@material-ui/core';
-import Checkbox from '@material-ui/core/Checkbox';
 import clsx from 'clsx';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Button } from '@tecsinapse/ui-kit';
-import { defaultGreyLight3 } from '@tecsinapse/ui-kit/build/colors';
+import { defaultGreyLight3 } from '@tecsinapse/ui-kit/build/utils/colors';
 import { renderStyledColor } from '@tecsinapse/ui-kit/build/ThemeProvider';
 import PoweredBy from './PoweredBy';
 
@@ -159,6 +161,7 @@ export const Login = ({
   const matches = useMediaQuery(useTheme().breakpoints.down('xs'));
 
   let mobile = false;
+
   if (variant === 'auto') {
     if (matches) {
       mobile = true;
@@ -244,7 +247,7 @@ export const Login = ({
           className={classes.submit}
           fullWidth={mobile}
           variant="contained"
-          color={renderStyledColor(theme.variant)}
+          color={renderStyledColor('yellow')}
           onClick={() => (rememberBox ? onClick(remember) : onClick())}
           disableElevation
         >
