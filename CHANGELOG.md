@@ -1,3 +1,13 @@
+## 1.2.0 (2020-08-04)
+
+* fix: updating dependencies ([a64cb0a](https://github.com/tecsinapse/login/commit/a64cb0a))
+* Bump elliptic from 6.5.2 to 6.5.3 ([d3e1e6c](https://github.com/tecsinapse/login/commit/d3e1e6c))
+* Bump lodash from 4.17.15 to 4.17.19 ([b8b6940](https://github.com/tecsinapse/login/commit/b8b6940))
+* Bump npm-registry-fetch from 4.0.4 to 4.0.5 ([ea0473d](https://github.com/tecsinapse/login/commit/ea0473d))
+* Bump websocket-extensions from 0.1.3 to 0.1.4 ([3d3c61e](https://github.com/tecsinapse/login/commit/3d3c61e))
+
+
+
 ## <small>1.1.8 (2020-06-11)</small>
 
 * Fix building ([1bae886](https://github.com/tecsinapse/login/commit/1bae886))
