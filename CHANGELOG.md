@@ -1,3 +1,9 @@
+## <small>1.2.1 (2020-09-21)</small>
+
+* feat: updating uikit version to 5.3.3 ([f738b88](https://github.com/tecsinapse/login/commit/f738b88))
+
+
+
 ## 1.2.0 (2020-08-04)
 
 * fix: updating dependencies ([a64cb0a](https://github.com/tecsinapse/login/commit/a64cb0a))
