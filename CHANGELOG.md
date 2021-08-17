@@ -1,3 +1,9 @@
+## 1.3.0 (2021-08-17)
+
+* update deps ([7293262](https://github.com/tecsinapse/login/commit/7293262))
+
+
+
 ## <small>1.2.1 (2020-09-21)</small>
 
 * feat: updating uikit version to 5.3.3 ([f738b88](https://github.com/tecsinapse/login/commit/f738b88))
