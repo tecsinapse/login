@@ -23,10 +23,10 @@
     "ui-kit"
   ],
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
-    "@tecsinapse/ui-kit": "~5.3.3",
+    "@material-ui/core": "^4.11.1",
+    "@material-ui/icons": "^4.11.1",
+    "@material-ui/styles": "^4.11.1",
+    "@tecsinapse/ui-kit": "^5.6.3",
     "clsx": "^1.1.1",
     "prop-types": "^15.6.2"
   },
@@ -66,15 +66,6 @@
     "react-textarea-autosize": "^7.1.0",
     "regenerator-runtime": "^0.12.1",
     "rimraf": "^2.6.3",
-    "rollup": "^0.68.2",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-babel": "4.0.3",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-filesize": "^5.0.1",
-    "rollup-plugin-local-resolve": "^1.0.7",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
     "source-map-explorer": "^2.0.0"
   },
   "files": [
@@ -83,10 +74,9 @@
   ],
   "scripts": {
     "analyze": "npx source-map-explorer 'dist/*.js'",
-    "build": "rimraf -rf build/ && babel src/ -d build/ && rollup -c",
+    "build": "rimraf -rf build/ && babel src/ -d build/",
     "build-all": "yarn build && yarn storybook:build",
     "build-publish": "yarn build-all && npm publish",
-    "dev": "rollup -c -w",
     "hooks": "bash .git/hooks/pre-commit",
     "publish:beta": "npm publish --tag beta",
     "start": "yarn install && yarn storybook",
