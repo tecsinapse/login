@@ -1,3 +1,10 @@
+## <small>1.3.1 (2021-08-19)</small>
+
+* add option to hide access button ([7819e7e](https://github.com/tecsinapse/login/commit/7819e7e))
+* feat: added prop in button (showButton) ([05acee2](https://github.com/tecsinapse/login/commit/05acee2))
+
+
+
 ## 1.3.0 (2021-08-17)
 
 * update deps ([7293262](https://github.com/tecsinapse/login/commit/7293262))
