@@ -2,7 +2,7 @@
   "name": "@tecsinapse/login",
   "description": "TecSinapse Login",
   "homepage": "https://github.com/tecsinapse/login#readme",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "build/index.js",
   "module": "build/index.js",
   "author": {
