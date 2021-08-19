@@ -95,6 +95,7 @@ const useStyle = makeStyles(({ spacing }) => ({
     justifyContent: ({ rememberBox }) =>
       rememberBox ? 'space-between' : 'flex-end',
     marginTop: spacing(1),
+    marginBottom: ({ showButton }) => (showButton ? spacing(0) : spacing(2)),
   },
   extramobile: {
     flexDirection: 'column',
@@ -102,6 +103,7 @@ const useStyle = makeStyles(({ spacing }) => ({
   submit: {
     marginTop: spacing(2),
     marginBottom: spacing(2),
+    display: ({ showButton }) => (showButton ? 'block' : 'none'),
   },
   social: {
     marginTop: spacing(2),
@@ -153,10 +155,11 @@ export const Login = ({
   variant,
   backgroundImage,
   googleProvider,
+  showButton = true,
 }) => {
   const [remember, setRemember] = useState(false);
 
-  const classes = useStyle({ rememberBox, backgroundImage });
+  const classes = useStyle({ rememberBox, backgroundImage, showButton });
   const theme = useTheme();
   const matches = useMediaQuery(useTheme().breakpoints.down('xs'));
 
@@ -335,6 +338,8 @@ Login.propTypes = {
     props: PropTypes.object,
     label: PropTypes.string,
   }),
+  /** Login button show */
+  showButton: PropTypes.string,
   /** Login button label */
   buttonLabel: PropTypes.string,
   /** Remember me option label */
