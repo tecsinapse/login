@@ -3,7 +3,7 @@
   "description": "TecSinapse Login",
   "homepage": "https://github.com/tecsinapse/login#readme",
   "version": "1.3.0",
-  "main": "dist/index.cjs.js",
+  "main": "build/index.js",
   "module": "build/index.js",
   "author": {
     "name": "TecSinapse"
