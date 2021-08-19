@@ -156,6 +156,7 @@ export const Login = ({
   backgroundImage,
   googleProvider,
   showButton = true,
+  disableSubmit = false,
 }) => {
   const [remember, setRemember] = useState(false);
 
@@ -253,6 +254,7 @@ export const Login = ({
           color={renderStyledColor('yellow')}
           onClick={() => (rememberBox ? onClick(remember) : onClick())}
           disableElevation
+          disabled={disableSubmit}
         >
           {buttonLabel}
         </Button>
@@ -319,6 +321,8 @@ Login.defaultProps = {
   variant: 'auto',
   backgroundImage: '',
   googleProvider: null,
+  disableSubmit: false,
+  showButton: true,
 };
 
 Login.propTypes = {
@@ -340,6 +344,8 @@ Login.propTypes = {
   }),
   /** Login button show */
   showButton: PropTypes.string,
+  /** Login button disable */
+  disableSubmit: PropTypes.string,
   /** Login button label */
   buttonLabel: PropTypes.string,
   /** Remember me option label */
