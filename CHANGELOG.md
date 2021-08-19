@@ -1,3 +1,9 @@
+## <small>1.3.2 (2021-08-19)</small>
+
+* add option to disable access button ([082d01b](https://github.com/tecsinapse/login/commit/082d01b))
+
+
+
 ## <small>1.3.1 (2021-08-19)</small>
 
 * add option to hide access button ([7819e7e](https://github.com/tecsinapse/login/commit/7819e7e))
