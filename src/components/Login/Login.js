@@ -103,7 +103,7 @@ const useStyle = makeStyles(({ spacing }) => ({
   submit: {
     marginTop: spacing(2),
     marginBottom: spacing(2),
-    display: ({ showButton }) => (showButton ? 'block' : 'none'),
+    display: ({ showButton }) => (showButton ? 'inline-flex' : 'none'),
   },
   social: {
     marginTop: spacing(2),
